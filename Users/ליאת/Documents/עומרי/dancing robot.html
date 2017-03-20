@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-
+<html>
 <head>
+  <title>The Dancing Robot</title>
 <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
 <script src="/assets/jquery.js"></script>
 <style>
@@ -120,6 +121,19 @@
   top:200px;
   left: 400px;
 }
+button{
+  top: 650px;
+  background-color: white;
+  font-family: 'Pollar One';
+  font-weight: bold;
+  border: 4px dashed rgba(255, 255, 255, 1);
+}
+button:hover{
+  background-color: #fae53b;
+}
+button:visited{
+  background-color: #008945;
+}
 </style>
 </head>
 
@@ -156,6 +170,9 @@ $(".color").click(function() {
   //
   var randomRGBA = 'rgba('+red+','+green+','+blue+',1)';
   $("body").css("background", randomRGBA);
+  $('.color').css("border", randomRGBA);
+  $('.flash').css("border", randomRGBA);
+  $('.moves').css("border", randomRGBA);
   //Display the three values in an alert window
  // alert(randomRGBA);
 });
@@ -164,3 +181,4 @@ $(".moves").click(function() {
 });
 </script>
 </body>
+</html>
