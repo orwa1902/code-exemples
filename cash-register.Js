@@ -1,12 +1,13 @@
+//method that create new employee
 function StaffMember(name,discountPercent){
     this.name = name;
     this.discountPercent = discountPercent;
 }
-
+//exemples for the method
 var sally = new StaffMember("Sally",5);
 var bob = new StaffMember("Bob",10);
 
-// Create yourself again as 'me' with a staff discount of 20%
+// Create yourself an employee member with your name
 var me = new StaffMember("orwa", 20)
 
 var cashRegister = {
@@ -29,7 +30,7 @@ var cashRegister = {
         this.total -= this.lastTransactionAmount;
         this.lastTransactionAmount = 0;
     },
-    // Create a new method applyStaffDiscount here
+    // function that allows you to know how much you have to pay as an employee
     applyStaffDiscount : function(employee){
         this.total -= this.total * (employee.discountPercent/100)
     }
@@ -44,4 +45,4 @@ cashRegister.scan('magazine',3);
 cashRegister.applyStaffDiscount(me)
 
 // Show the total bill
-console.log('Your bill is '+cashRegister.total.toFixed(2));
+alert('Your bill is '+cashRegister.total.toFixed(2));
