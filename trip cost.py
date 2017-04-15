@@ -24,4 +24,4 @@ def trip_cost(city, days, spending_money):
     """total price of the vacation + extra money"""
     return rental_car_cost(days) + plane_ride_cost(city) + hotel_cost(days) + spending_money
 """exemple for the function trip_cost"""
-print trip_cost("Los Angeles", 5, 600)
+print trip_cost("Los Angeles", 5, 700)

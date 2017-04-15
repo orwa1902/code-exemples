@@ -22,7 +22,6 @@ orwa = {
     "quizzes": [78.00, 89.00, 90.00],
     "tests": [100.00, 100.00]
 }
-
 students = [lloyd, alice, tyler]
 # Add your functions below!
 def average(numbers):
