@@ -16,6 +16,13 @@ tyler = {
     "quizzes": [0.0, 75.0, 78.0],
     "tests": [100.0, 100.0]
 }
+orwa = {
+    "name": "orwa",
+    "homework": [100.0, 89.00, 95.00, 97.00],
+    "quizzes": [78.00, 89.00, 90.00],
+    "tests": [100.00, 100.00]
+}
+
 students = [lloyd, alice, tyler]
 # Add your functions below!
 def average(numbers):
