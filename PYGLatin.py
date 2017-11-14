@@ -1,3 +1,5 @@
+"""pay attention- the program is printing one word at a time only
+dont enter multiply words to the input"""
 #what we add to the original word
 pygLatin ='ay'
 """a condition that say \'dont print the word if its not bigger than 2 chars and if there is a numbers in it and if it doesnt follow the if statment, it prints an error"""
