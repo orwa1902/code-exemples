@@ -3,14 +3,13 @@
 <head>
   <title>The Dancing Robot</title>
 <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
-<script src="/assets/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <style>
-
 .robot {
   position: relative;
   left: 200px;
 }
-
 .beep {
   width: 5px;
   height: 0;
@@ -20,7 +19,6 @@
   position: relative;
   left: 140px;
 }
-
 @keyframes blink {
   50% {
     background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
@@ -153,14 +151,13 @@ button:visited{
 <button class="color">change color!</button>
 <button class="moves">break/dance</button>
 
-<img src="/assets/dance_cotter.gif">
+<img src="http://gifimage.net/bad-dancing-gif-21/">
 
 <script>
 // When eyes button is clicked, toggle laser class on brain
 $(".flash").click(function() {
   $(".brain").toggleClass('laser');
 });
-
 // When color button is clicked...
 $(".color").click(function() {
   // assign each named color a random number 0-255
